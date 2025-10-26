@@ -41,4 +41,4 @@ All prices are *approximate* in CAD, based on Amazon.ca / Best Buy Canada as of 
 ---
 
 ⚠️ **Disclaimer:** Modifying or disassembling components (e.g., removing heatsinks or covers) may void warranties.  
-Refer to the [project disclaimer](../../DISCLAIMER.md) for full terms and liability limitations.
+Refer to the [project disclaimer](../DISCLAIMER.md) for full terms and liability limitations.

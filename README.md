@@ -30,13 +30,13 @@ The goal is simple: let builders focus on creating, not debugging.
 - **Hardware Guides** — Recommendations for CPUs, GPUs, RAM, and storage optimized for AI (e.g., NVIDIA RTX 5080, 128 GB DDR5).  
 - **Software Setup** — Step-by-step instructions for Ubuntu 24.04, CUDA, PyTorch, TensorFlow, PyCUDA, and more.  
 - **Troubleshooting** — Solutions for common issues (e.g., NVIDIA driver errors, PCIe lane conflicts).  
-- **Benchmarks** — Performance metrics for real AI workloads (e.g., training times, inference speeds).  
+- **Benchmarks** — Performance metrics for AI workloads (e.g., training times, inference speeds).  
 - **Community Builds** — Directory for user-submitted PC builds with configs and scripts.
 
 ---
 
 ## 🧩 Example Build
-**Based on a real setup (May 2025) for real estate price prediction (3.2 GB dataset):**
+**Based on a real setup (Summer 2025) for asset-level price prediction (3.2 GB dataset):**
 
 ### 🔧 Hardware
 | Component | Details |
@@ -56,7 +56,7 @@ These are sample metrics collected during local experimentation — not official
 
 | Task | Metric | Result |
 |------|---------|--------|
-| PyTorch MLP (real-estate dataset) | Final loss | ~0.02 after 100 samples |
+| PyTorch MLP (asset-level dataset) | Final loss | ~0.02 after 100 samples |
 | ONNX C++ inference | Latency | ~0.1 s for 47 records (< $500 K each) |
 | CUDA profiling | Host→device transfer | ~2.6 MB/s during batch inference |
 
@@ -81,7 +81,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 ---
 
 ## 🤝 How to Contribute
-1. Fork this repository and create a new directory under `builds/` (e.g., `build_2_yourname_2025`).  
+1. Fork this repository and create a new directory under `builds/` (e.g., `build_2_yourname_year`).  
 2. Include:  
    - `hardware.md`  
    - `software.md`  
