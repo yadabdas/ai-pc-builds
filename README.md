@@ -12,11 +12,14 @@ This repository provides detailed hardware and software guides, troubleshooting 
 ---
 
 ## 💬 Founder’s Note
-This project began while experimenting with **awareness algorithms** and **property-valuation AI** ideas.  
-After facing dependency hell, kernel-module issues, and cloud costs, I decided to build and document a reliable local AI setup anyone could replicate.  
 
-It exists to give developers **versatility, accessibility, and low-cost experimentation** — *not* to serve as production-grade infrastructure.  
-The goal is simple: let builders focus on creating, not debugging.
+This project started as a personal experiment to make AI development **simpler and more affordable**.  
+After struggling with hardware limits, driver issues, and the high cost of cloud compute, I realized how many developers face the same barriers just to get started.
+
+So I built this guide — not as a benchmark contest, but as a **shared notebook for AI builders**.  
+It’s a place where anyone can learn, share, and optimize their own setup without burning time or money on trial and error.
+
+> The mission is simple: make local AI experimentation accessible to everyone who wants to build, learn, and explore.
 
 ---
 
