@@ -79,6 +79,16 @@ The build was optimized for **AI workloads such as asset valuation and model exp
 
 ---
 
+### Numba on RTX 5080 (sm_120) – CUDA_ERROR_NO_BINARY_FOR_GPU
+- **Issue:** `CUDA_ERROR_NO_BINARY_FOR_GPU` (error 209) when running any Numba CUDA kernel on RTX 5080 (Blackwell / compute capability 12.0).
+- **Impact:** Numba completely unusable on RTX 50-series GPUs – no kernel could be compiled or launched.
+- **Root cause:** Numba versions ≤ 0.61.x did not ship binaries or PTX for sm_120.
+- **Resolution:** Upgraded to **Numba 0.62.1** – first release with official Blackwell support. After the upgrade the same kernels work instantly.
+- **Current status:** Fully working as of Numba 0.62.1 (conda-forge). Keep this version (or newer) in any RTX 5080 / 5090 build.
+- **Lesson:** Blackwell support landed in Numba 0.62 – do not waste time with 0.61.x or earlier on RTX 50-series.
+
+---
+
 ## ✅ Verification Summary
 After all fixes and optimizations:
 - `nvidia-smi` detects RTX 5080 with CUDA 12.9  
